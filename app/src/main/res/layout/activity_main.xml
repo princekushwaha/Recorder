@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:accessibilityLiveRegion="none"
+    android:drawingCacheQuality="high"
+    android:focusable="auto"
+    tools:context=".MainActivity"
+    android:background="@color/back_tint">
+
+ <androidx.appcompat.widget.Toolbar
+     android:id="@+id/toolbar"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/toolbar" />
+
+ <Chronometer
+     android:id="@+id/chronometer"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/toolbar"
+     android:layout_centerHorizontal="true"
+     android:focusable="true"
+     android:layout_marginTop="30dp"
+     android:textSize="60sp"
+     android:visibility="invisible" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Recording..."
+      android:layout_below="@+id/chronometer"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:id="@+id/recording"
+      android:visibility="invisible"/>
+ <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/recording_image"
+     android:layout_toLeftOf="@+id/recording"
+     android:layout_alignBottom="@+id/recording"
+     android:layout_alignTop="@+id/recording"
+     android:id="@+id/recording_image"
+     android:visibility="invisible"
+     android:layout_marginRight="3dp"/>
+
+
+ <ImageButton
+     android:id="@+id/play_pause_recored"
+     android:layout_width="70dp"
+     android:layout_height="70dp"
+     android:layout_alignParentBottom="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginBottom="70dp"
+     android:background="@color/transparent"
+     android:clickable="true"
+     android:src="@drawable/record_button"
+
+     />
+
+ <ImageButton
+     android:id="@+id/save"
+     style="@style/Widget.AppCompat.ImageButton"
+     android:layout_width="70dp"
+     android:layout_height="70dp"
+    android:background="@color/transparent"
+     android:layout_alignTop="@+id/play_pause_recored"
+     android:layout_alignBottom="@+id/play_pause_recored"
+     android:layout_marginLeft="30dp"
+     android:layout_toRightOf="@+id/play_pause_recored"
+     android:adjustViewBounds="true"
+     android:baselineAlignBottom="false"
+     android:cropToPadding="true"
+     android:fadeScrollbars="false"
+     android:fadingEdge="none"
+     android:scaleType="fitCenter"
+     android:src="@drawable/save"
+     android:verticalScrollbarPosition="defaultPosition"
+     android:visibility="invisible" />
+
+
+
+</RelativeLayout>

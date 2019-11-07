@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:padding="18dp">
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/audio_seekbar" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/audio_name"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/audio_seekbar"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/audio_name"
+        android:layout_alignTop="@+id/audio_name"
+        android:id="@+id/audio_button"
+        android:src="@drawable/small_pause_button"
+        android:backgroundTintMode="add"/>
+
+
+</RelativeLayout>
